@@ -1,5 +1,5 @@
 import React from 'react';
-import CatDog from "./cat-dog/CatDog";
+import CatDog from "./componnets/cat-dog/CatDog";
 
 const App = () => {
     return (
