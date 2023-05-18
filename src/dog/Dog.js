@@ -20,8 +20,7 @@ const Dog = ({stateDispatch: [{dogs}, dispatch]}) => {
                 {dogs && dogs.map(dog => <div key={dog.id}>
                     Id: {dog.id} <br/>
                     Name: {dog.name} <br/>
-                    <button onClick={() => dispatch({type: 'DELETE_DOG'})}>Delete</button>
-
+                    <button onClick={() => dispatch({type: 'DELETE_DOG', payload: dog.id})}>Delete</button>
 
 
                 </div>)}
