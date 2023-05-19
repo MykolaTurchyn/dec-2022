@@ -11,7 +11,7 @@ const reducer = (state, action) => {
             return cat.name ? {...state, cats: [...state.cats, cat]} : {...state};
         case 'ADD_DOG':
             const dog = action.payload;
-            dog.id = state.dogs.slice(-1)[0]?.id + 1 || 1;
+            dog.id = state.dogs.slice(-1)[0]?.id+ 1 || 1;
             return dog.name ? {...state, dogs: [...state.dogs, dog]} : {...state};
         case 'DELETE_CAT':
             const catToDel = action.payload;
