@@ -22,8 +22,11 @@ const Cat = ({stateDispatch: [{cats}, dispatch]}) => {
                         <div key={cat.id}>
                             Id:{cat.id} <br/>
                             Name: {cat.name} <br/>
-                            <button onClick={() => dispatch({type: 'DELETE_CAT', payload: cat.id})}>Delete</button>
-
+                            <button onClick={() => {
+                                dispatch({type: 'DELETE_CAT', payload: cat.id})
+                            }}
+                            >Delete
+                            </button>
                         </div>
                     )
 
