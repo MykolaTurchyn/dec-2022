@@ -1,9 +1,13 @@
 import React from 'react';
+import Users from "./componnents/users/Users";
+import Cars from "./componnents/cars/Cars";
 
 const App = () => {
     return (
         <div>
-            App
+            <Users/>
+            <hr/>
+            <Cars/>
         </div>
     );
 };
