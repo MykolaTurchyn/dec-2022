@@ -18,6 +18,7 @@ const carSlice = createSlice({
             const car = action.payload.car;
             state.cars.push(car);
 
+
         }
     }
 });

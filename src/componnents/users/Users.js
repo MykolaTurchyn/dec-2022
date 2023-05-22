@@ -7,9 +7,11 @@ const Users = () => {
     const dispatch = useDispatch();
     const submit = (e) => {
         e.preventDefault()
-        const name = e.target.userName.value;
+        const name = e.target?.userName.value;
         const user = {id: new Date().getTime(), name};
         dispatch(addUser({user}))
+        e.target.userName.value = null;
+
     }
     return (
         <div>

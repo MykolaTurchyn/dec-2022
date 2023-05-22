@@ -12,6 +12,7 @@ const Cars = () => {
         const brand = e.target.brand.value;
         const car = {id: new Date().getMilliseconds(), brand}
         dispatch(addCar({car}));
+        e.target.brand.value = '';
     }
     return (
         <div>
