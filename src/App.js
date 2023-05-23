@@ -1,9 +1,17 @@
+import style from './App.module.css'
 import React from 'react';
+import Posts from "./components/posts/Posts";
+import UsersPage from "./pages/UsersPage";
+import Header from "./components/header/Header";
 
 const App = () => {
     return (
         <div>
-            App
+            <Header/>
+            <div className={style.Components}>
+                <UsersPage/>
+                <Posts/>
+            </div>
         </div>
     );
 };

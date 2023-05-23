@@ -1,0 +1,10 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "American Typewriter", ui-serif;
+    color: chocolate;
+    margin-top: 10px;
+    
+
+}
