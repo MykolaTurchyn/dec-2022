@@ -6,6 +6,7 @@ const slice = createSlice(
     {
         "name": 'carSlice',
         initialState,
+        trigger: null,
         "reducers": {
             setCar: (state, action) => {
                 const cars = action.payload

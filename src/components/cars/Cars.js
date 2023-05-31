@@ -13,7 +13,7 @@ const Cars = () => {
         carService.getAllCars().then(({data}) => {
             dispatch(carAction.setCar(data));
         })
-    }, []);
+    }, [dispatch]);
 
     return (
         <div>

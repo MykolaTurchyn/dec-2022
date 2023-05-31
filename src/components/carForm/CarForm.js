@@ -8,7 +8,8 @@ const CarForm = () => {
 
     const submit = (car) => {
         carService.addCar(car).then(newCar => carAction.setCar(newCar));
-        reset();
+        reset()
+
     };
     return (
         <form onSubmit={handleSubmit(submit)}>
